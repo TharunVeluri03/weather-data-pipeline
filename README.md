@@ -28,8 +28,8 @@ A simple **ETL (Extract, Transform, Load) pipeline** that fetches hourly weather
 ## 🚀 Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/weather-data-pipeline.git
-cd weather-data-pipeline
+git clone https://github.com/TharunVeluri03/weather-data-pipeline.git
+cd weather-data-pipeline```
 
 # Optional: create virtual environment
 python -m venv venv
