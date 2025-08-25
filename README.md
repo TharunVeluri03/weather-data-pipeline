@@ -8,61 +8,46 @@ A simple **ETL (Extract, Transform, Load) pipeline** that fetches hourly weather
 
 - Fetches hourly weather data (temperature, humidity) for a chosen location.
 - Transforms raw JSON data into a structured format.
-- Stores data in **SQLite** database (`weather_data.db`).
+- Stores data in **SQLite** database (`weather_data.db` locally, ignored in GitHub).
 - Provides **visualizations** of temperature and humidity trends using **matplotlib**.
-- Fully modular and extendable for additional weather variables (e.g., wind, rain).
+- Fully modular and extendable for additional weather variables.
 
 ---
 
 ## ⚙️ Tech Stack
 
-- **Python 3.9+**
-- `requests` – to fetch API data
-- `pandas` – for data manipulation
-- `matplotlib` – for visualization
+- Python 3.9+
+- `requests` – API calls
+- `pandas` – data manipulation
+- `matplotlib` – visualization
 - `sqlite3` – database storage
-
-Optional: Jupyter Notebook (`notebooks/weather_analysis.ipynb`) for data exploration.
-
----
-
-## 🗂️ Repo Structure
-
-weather-data-pipeline/
-_pipeline.py # Main ETL script
-_db_utils.py # Database helper functions
-_config.py # Config & API details
-_visualize_weather.py # Plot temperature/humidity trends
-_requirements.txt # Python dependencies
-_README.md # Project overview
-_weather_data.db # Generated SQLite database
-_notebooks/ # Jupyter notebook for analysis
-
+- Optional: Jupyter Notebook (`notebooks/weather_analysis.ipynb`)
 
 ---
 
 ## 🚀 Installation
 
-1. Clone the repo:
-
 ```bash
-git clone https://github.com/TharunVeluri03/weather-data-pipeline.git
+git clone https://github.com/YOUR_USERNAME/weather-data-pipeline.git
 cd weather-data-pipeline
 
-2. (Optional) Create a virtual environment:
-
+# Optional: create virtual environment
 python -m venv venv
 source venv/bin/activate   # Mac/Linux
 venv\Scripts\activate      # Windows
 
-3. Install dependencies:
-
 pip install -r requirements.txt
 
+---
 
 ## 🏃 Running the Pipeline
 
 python pipeline.py
+
+- Fetches data from Open-Meteo API.
+- Saves structured data in SQLite DB locally (weather_data.db).
+
+---
 
 ## 📊 Visualizing the Data
 
@@ -70,6 +55,7 @@ python visualize_weather.py
 
 - Generates a line chart for temperature and humidity trends.
 - Optional: view data in Jupyter Notebook:
+
 
 
 
