@@ -29,21 +29,28 @@ A simple **ETL (Extract, Transform, Load) pipeline** that fetches hourly weather
 
 ```
 git clone https://github.com/TharunVeluri03/weather-data-pipeline.git
+```
+
+```
 cd weather-data-pipeline
 ```
 
 # Optional: create virtual environment
+
+```
 python -m venv venv
 source venv/bin/activate   # Mac/Linux
 venv\Scripts\activate      # Windows
 
 pip install -r requirements.txt
-'''
+```
 ---
 
 ## 🏃 Running the Pipeline
 
+```
 python pipeline.py
+```
 
 - Fetches data from Open-Meteo API.
 - Saves structured data in SQLite DB locally (weather_data.db).
@@ -52,7 +59,9 @@ python pipeline.py
 
 ## 📊 Visualizing the Data
 
+```
 python visualize_weather.py
+```
 
 - Generates a line chart for temperature and humidity trends.
 - Optional: view data in Jupyter Notebook:
