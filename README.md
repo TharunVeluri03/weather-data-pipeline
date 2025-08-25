@@ -27,7 +27,7 @@ Optional: Jupyter Notebook (`notebooks/weather_analysis.ipynb`) for data explora
 ---
 
 ## 🗂️ Repo Structure
-
+'''
 weather-data-pipeline/
 │── pipeline.py # Main ETL script
 │── db_utils.py # Database helper functions
@@ -37,7 +37,7 @@ weather-data-pipeline/
 │── README.md # Project overview
 │── weather_data.db # Generated SQLite database
 │── notebooks/ # Jupyter notebook for analysis
-
+'''
 
 ---
 
