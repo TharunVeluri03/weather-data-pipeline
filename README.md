@@ -66,7 +66,6 @@ python visualize_weather.py
 ```
 
 - Generates a line chart for temperature and humidity trends.
-- Optional: view data in Jupyter Notebook:
 
 
 
